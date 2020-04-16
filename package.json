@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && mv build docs",
+    "build": "react-scripts build",
     "fix": "eslint src/**/*.{js,jsx,ts,tsx} --fix --cache",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx} --cache",
     "test": "react-scripts test",

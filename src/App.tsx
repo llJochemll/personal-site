@@ -1,7 +1,7 @@
 /* eslint-disable sort-keys */
 import { Toolbar, AppBar, Button, Fab } from "@material-ui/core";
 import React from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route, Link, HashRouter } from "react-router-dom";
 import { Activities } from "./activities/Activities";
 import { Home } from "./home/Home";
 import { Projects } from "./projects/Projects";
@@ -11,7 +11,7 @@ import styles from "./App.module.scss";
 const App: React.FC = () => {
     return (
         <div className={styles.app}>
-            <BrowserRouter>
+            <HashRouter basename="/">
                 <AppBar position="sticky">
                     <Toolbar color="inherit">
                         <Link to="/home" style={{color: "inherit"}}>
@@ -40,7 +40,7 @@ const App: React.FC = () => {
                         <ChatBubble/>
                     </Fab>
                 </div>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     );
 };
