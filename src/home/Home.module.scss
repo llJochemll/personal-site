@@ -1,0 +1,8 @@
+.content {
+    display: flex;
+    height: calc(100vh - 64px);
+    justify-content: center;
+    overflow: scroll;
+    padding: 1em;
+    box-sizing: border-box;
+}

@@ -42,6 +42,7 @@ export const ProjectCard: React.FC<{
                 </CardActions>
             </Card>
             <AutoRotatingCarousel
+                mobile={/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)}
                 open={carouselOpen}
                 onClose={() => setCarouselOpen(false)}
                 onStart={() => setCarouselOpen(true)}
