@@ -21,10 +21,10 @@ const App: React.FC = () => {
                 params={{
                     particles: {
                         number: {
-                            value: 200
+                            value: 50
                         },
                         size: {
-                            value: 3
+                            value: 7
                         }
                     },
                     interactivity: {

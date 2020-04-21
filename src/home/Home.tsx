@@ -5,7 +5,7 @@ import classes from "*.module.scss";
 export const Home: React.FC = () => {
     return (
         <div style={{display: "flex", height: "calc(100vh - 64px)", justifyContent: "center"}}>
-            <Card style={{height: "min-content", margin: "1em", maxWidth: "50em"}}>
+            <Card style={{height: "min-content", margin: "1em", maxWidth: "50em", zIndex: 1}}>
                 <CardContent>
                     <Typography>
                         <p>
