@@ -2,6 +2,7 @@ import { green, blue, red } from "@material-ui/core/colors";
 
 export interface IProject {
     description: string;
+    image: string;
     link: string;
     title: string;
     slides: IProjectSlide[];

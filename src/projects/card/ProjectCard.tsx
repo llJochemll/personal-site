@@ -1,5 +1,4 @@
 import { Card, CardMedia, CardContent, Typography, CardProps, CardActions, CardActionArea, Button } from "@material-ui/core";
-import { red, green, blue } from "@material-ui/core/colors";
 import { AutoRotatingCarousel, Slide } from "material-auto-rotating-carousel";
 import React, { useState } from "react";
 import { IProject } from "../IProject";
@@ -14,7 +13,16 @@ export const ProjectCard: React.FC<{
             <Card>
                 <CardActionArea onClick={() => setCarouselOpen(true)}>
                     <CardMedia
-                        title={props.project.title}
+                        component="img"
+                        alt="Image"
+                        height="200"
+                        image={props.project.image}
+                        style={{
+                            display: "block",
+                            marginLeft: "auto",
+                            marginRight: "auto",
+                            width: "auto",
+                        }}
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">

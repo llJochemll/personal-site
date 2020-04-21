@@ -1,12 +1,13 @@
+import { red, blue, green } from "@material-ui/core/colors";
 import React from "react";
 import { ProjectCard } from "./card/ProjectCard";
 import { IProject } from "./IProject";
 import styles from "./Projects.module.scss";
-import { red, blue, green } from "@material-ui/core/colors";
 
 const projectList: IProject[] = [
     {
         description: "Online leerplatform voor scholen",
+        image: "https://cloudclass.be/static/media/logo_blue.f557d0ec.png",
         link: "https://cloudclass.be",
         slides: [
             {
@@ -32,6 +33,7 @@ const projectList: IProject[] = [
     },
     {
         description: "E-mail notificaties met het dagmenu van PXL catering",
+        image: "https://www.pxlfood.be/images/pxl_catering_notification.png",
         link: "https://www.pxlfood.be",
         slides: [],
         title: "PXL Food"

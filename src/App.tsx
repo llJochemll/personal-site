@@ -1,12 +1,12 @@
 /* eslint-disable sort-keys */
 import { Toolbar, AppBar, Button, Fab } from "@material-ui/core";
+import { ChatBubble } from "@material-ui/icons";
 import React from "react";
-import { BrowserRouter, Route, Link, HashRouter } from "react-router-dom";
+import { Route, Link, HashRouter } from "react-router-dom";
 import { Activities } from "./activities/Activities";
+import styles from "./App.module.scss";
 import { Home } from "./home/Home";
 import { Projects } from "./projects/Projects";
-import { ChatBubble } from "@material-ui/icons";
-import styles from "./App.module.scss";
 
 const App: React.FC = () => {
     return (
