@@ -2,7 +2,7 @@
 import { Toolbar, AppBar, Button, Fab, useTheme } from "@material-ui/core";
 import { ChatBubble } from "@material-ui/icons";
 import React from "react";
-import Particles, { HoverMode } from "react-particles-js";
+import Particles, { HoverMode, ClickMode } from "react-particles-js";
 import { Route, Link, HashRouter } from "react-router-dom";
 import { Activities } from "./activities/Activities";
 import styles from "./App.module.scss";
@@ -25,10 +25,18 @@ const App: React.FC = () => {
                         },
                         size: {
                             value: 7
+                        },
+                        move: {
+                            speed: 5,
+                            bounce: true,
                         }
                     },
                     interactivity: {
                         events: {
+                            onclick: {
+                                enable: true,
+                                mode: ClickMode.push
+                            },
                             onhover: {
                                 parallax: {
                                     enable: true,
