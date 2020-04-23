@@ -21,7 +21,7 @@ const App: React.FC = () => {
                 params={{
                     particles: {
                         number: {
-                            value: 50
+                            value: 100
                         },
                         size: {
                             value: 7
@@ -30,6 +30,11 @@ const App: React.FC = () => {
                     interactivity: {
                         events: {
                             onhover: {
+                                parallax: {
+                                    enable: true,
+                                    force: 250,
+                                    smooth: 10,
+                                },
                                 enable: true,
                                 mode: HoverMode.grab
                             }
@@ -61,11 +66,6 @@ const App: React.FC = () => {
                 <Route path="/home" component={Home}/>
                 <Route path="/projects" component={Projects}/>
                 <Route path="/activities" component={Activities}/>
-                <div className={styles.chatIcon} >
-                    <Fab color="primary" aria-label="chat">
-                        <ChatBubble/>
-                    </Fab>
-                </div>
             </HashRouter>
         </div>
     );

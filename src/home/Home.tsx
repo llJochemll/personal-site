@@ -35,7 +35,7 @@ export const Home: React.FC = () => {
                             Github
                         </Button>
                     </a>
-                    <a href="https://github.com/lljochemll" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/jochemdejaeghere/" target="_blank" rel="noopener noreferrer">
                         <Button size="medium" color="primary">
                             Linkedin
                         </Button>
