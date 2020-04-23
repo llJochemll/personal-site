@@ -208,7 +208,7 @@ const activityList: IActivity[] = [
             begin: moment("09:00", "HH:mm"),
             end: moment("12:00", "HH:mm"),
         },
-        image: "",
+        image: "https://plushostels.com/files/berlino/plus-hostels-berlin.jpg.pagespeed.ce.eCHXfXFOi_.jpg",
         link: "http://pxl-digital.pxl.be/page/studentenreis-2020-berlijn",
         location: "Berlijn",
         title: "Studiereis Berlijn",

@@ -1,4 +1,4 @@
-import { green, blue, red } from "@material-ui/core/colors";
+import { green, blue, red, yellow } from "@material-ui/core/colors";
 
 export interface IProject {
     description: string;
@@ -8,7 +8,7 @@ export interface IProject {
     slides: IProjectSlide[];
 }
 
-const list = [red, green, blue] as const;
+const list = [red, green, blue, yellow] as const;
 type ColorType = typeof list[number];
 
 export interface IProjectSlide {

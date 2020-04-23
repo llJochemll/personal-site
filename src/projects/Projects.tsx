@@ -1,4 +1,4 @@
-import { red, blue, green } from "@material-ui/core/colors";
+import { red, blue, green, yellow } from "@material-ui/core/colors";
 import React from "react";
 import { ProjectCard } from "./card/ProjectCard";
 import { IProject } from "./IProject";
@@ -35,7 +35,26 @@ const projectList: IProject[] = [
         description: "E-mail notificaties met het dagmenu van PXL catering",
         image: "https://www.pxlfood.be/images/pxl_catering_notification.png",
         link: "https://www.pxlfood.be",
-        slides: [],
+        slides: [
+            {
+                color: blue,
+                media: "https://cdn.worldvectorlogo.com/logos/azure-1.svg",
+                subtitle: "Draait volledig in de cloud voor maximale performantie en availability",
+                title: "Cloud Native"
+            },
+            {
+                color: yellow,
+                media: "https://www.element61.be/sites/default/files/competence/Microsoft%20Azure%20Functions/1.png",
+                subtitle: "Draait volledig op Azure Functions",
+                title: "Volledig serverless"
+            },
+            {
+                color: red,
+                media: "https://github.githubassets.com/images/modules/open_graph/github-mark.png",
+                subtitle: "Source code is volledig beschikbaar op GitHub",
+                title: "Open Source"
+            }
+        ],
         title: "PXL Food"
     }
 ];
